@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Samosa Recipe | Authentic Indian Snack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-pattern {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        .recipe-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-amber-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-amber-600 playfair">
+                            <i class="fas fa-utensils mr-2"></i>Samosa Delight
+                        </h1>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#recipe" class="text-gray-700 hover:text-amber-600 transition-colors">Recipe</a>
+                    <a href="#ingredients" class="text-gray-700 hover:text-amber-600 transition-colors">Ingredients</a>
+                    <a href="#tips" class="text-gray-700 hover:text-amber-600 transition-colors">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 playfair">
+                    Authentic Samosa Recipe
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">
+                    Crispy, golden triangles filled with spiced potatoes and peas
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <span class="bg-white text-amber-600 px-4 py-2 rounded-full font-semibold">
+                        <i class="fas fa-clock mr-2"></i>45 mins
+                    </span>
+                    <span class="bg-white text-amber-600 px-4 py-2 rounded-full font-semibold">
+                        <i class="fas fa-user mr-2"></i>4 servings
+                    </span>
+                    <span class="bg-white text-amber-600 px-4 py-2 rounded-full font-semibold">
+                        <i class="fas fa-star mr-2"></i>Easy
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Introduction -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 playfair">The Perfect Indian Snack</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Samosas are a beloved snack across India and beyond. These crispy, triangular pastries are filled with 
+                spiced potatoes, peas, and sometimes meat, making them the perfect tea-time treat or party appetizer.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Ingredients -->
+            <div id="ingredients" class="recipe-card bg-white rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-amber-600 mb-6 playfair">
+                    <i class="fas fa-list-check mr-3"></i>Ingredients
+                </h3>
+                
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">For the Dough:</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>2 cups all-purpose flour</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>4 tbsp ghee or oil</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>1 tsp salt</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>Water as needed</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">For the Filling:</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>3 large potatoes, boiled and mashed</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>1 cup green peas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>1 tbsp ginger-garlic paste</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>2 green chilies, finely chopped</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>1 tsp cumin seeds</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>1 tsp garam masala</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>Salt to taste</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+                            <span>Oil for frying</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div id="recipe" class="recipe-card bg-white rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-amber-600 mb-6 playfair">
+                    <i class="fas fa-mortar-pestle mr-3"></i>Instructions
+                </h3>
+
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <span class="bg-amber-100 text-amber-600 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</span>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Make the Dough</h4>
+                            <p class="text-gray-600">Mix flour, salt, and ghee. Add water gradually to form a stiff dough. Cover and rest for 30 minutes.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="bg-amber-100 text-amber-600 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</span>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Prepare Filling</h4>
+                            <p class="text-gray-600">Heat oil, add cumin seeds. Add ginger-garlic paste, chilies, then potatoes and peas. Add spices and cook for 5 minutes.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="bg-amber-100 text-amber-600 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">3</span>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Shape Samosas</h4>
+                            <p class="text-gray-600">Divide dough into balls, roll into circles, cut in half. Form cones, fill with mixture, and seal edges.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="bg-amber-100 text-amber-600 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">4</span>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Fry to Perfection</h4>
+                            <p class="text-gray-600">Heat oil to medium heat. Fry samosas until golden brown and crispy. Drain on paper towels.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="bg-amber-100 text-amber-600 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">5</span>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Serve Hot</h4>
+                            <p class="text-gray-600">Serve with mint chutney, tamarind sauce, or your favorite dip. Best enjoyed fresh and hot!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div id="tips" class="mt-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-8 text-center playfair">
+                <i class="fas fa-lightbulb mr-3 text-amber-500"></i>Pro Tips
+            </h3>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-4">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Oil Temperature</h4>
+                    <p class="text-gray-600">Maintain medium heat (350°F/175°C) for perfect crispy texture without burning.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-4">
+                        <i class="fas fa-seal"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Proper Sealing</h4>
+                    <p class="text-gray-600">Use a flour-water paste to seal edges tightly to prevent filling from leaking during frying.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Dough Resting</h4>
+                    <p class="text-gray-600">Let the dough rest for at least 30 minutes for easier rolling and better texture.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cultural Info -->
+        <div class="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+            <h3 class="text-3xl font-bold text-amber-600 mb-6 playfair">
+                <i class="fas fa-globe-asia mr-3"></i>Cultural Heritage
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Origins & History</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Samosas have a rich history dating back to the Middle East, where they were known as "sambosa." 
+                        They traveled to India via Central Asian traders and became an integral part of Indian cuisine. 
+                        Today, they're enjoyed worldwide as a popular street food and appetizer.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Regional Variations</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Different regions have their own variations - from potato-filled versions in North India to 
+                        meat-filled ones in Muslim communities, and even sweet versions in some parts. They're often 
+                        served during festivals, weddings, and special occasions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4 playfair">Samosa Delight</h3>
+                <p class="text-gray-400 mb-6">Bringing authentic Indian flavors to your kitchen</p>
+                
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="text-amber-400 hover:text-amber-300 transition-colors">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-amber-400 hover:text-amber-300 transition-colors">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-amber-400 hover:text-amber-300 transition-colors">
+                        <i class="fab fa-pinterest text-2xl"></i>
+                    </a>
+                </div>
+                
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 Samosa Delight. All rights reserved. | 
+                    <a href="#" class="text-amber-400 hover:text-amber-300">Privacy Policy</a> | 
+                    <a href="#" class="text-amber-400 hover:text-amber-300">Contact Us</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
